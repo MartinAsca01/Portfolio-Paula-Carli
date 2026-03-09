@@ -176,21 +176,10 @@ function TabPrototype() {
         centered
       />
 
-      <FullWidthImage
-        image="/img-exseed-dashboard.png"
-        alt="Interactive prototype — CASA Lite dashboard"
-        caption="CASA Lite — Quality Control section prototype"
-      />
-
-      {/* Figma embed placeholder */}
-      <section className="px-4 md:px-8 py-10">
+      <section className="px-4 md:px-8 pb-14">
         <div className="max-w-5xl mx-auto">
-          <div
-            className="w-full rounded-2xl bg-gray-100 flex items-center justify-center text-gray-400 text-sm"
-            style={{ height: 500 }}
-          >
-            Figma prototype embed
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/img-exseed-prototype.gif" alt="CASA Lite prototype" className="w-full h-auto rounded-2xl" />
         </div>
       </section>
     </>

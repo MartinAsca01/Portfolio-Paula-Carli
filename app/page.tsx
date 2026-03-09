@@ -161,23 +161,9 @@ export default function Home() {
       {/* ── PROJECTS ── */}
       <section id="projects" className="px-4 md:px-8 py-14 md:py-20">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-semibold mb-8 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-12 tracking-tight">
             Projects<Dot />
           </h2>
-
-          {/* Filter tags */}
-          <div className="flex gap-2 mb-8 md:mb-10 flex-wrap justify-center">
-            {["All", "Service design", "Co-design", "Graphic design", "Cross-cultural design"].map(
-              (tag) => (
-                <FilterTag
-                  key={tag}
-                  label={tag}
-                  active={activeFilter === tag}
-                  onClick={() => setActiveFilter(tag)}
-                />
-              )
-            )}
-          </div>
 
           {/* Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -237,8 +223,6 @@ export default function Home() {
               sustainability drives more accessible to users than ever before.
             </p>
 
-            <p>I now have the space to take on additional clients.</p>
-
             <p>
               <strong>Who am I?</strong> Six years ago, I arrived in Copenhagen
               from Buenos Aires, inspired by Denmark&apos;s triple success in product
@@ -272,27 +256,10 @@ export default function Home() {
 
             <p className="pt-4">
               If you&apos;re interested in what we can do together, hit &apos;Contact me&apos;.
-              I always look forward to crafting design solutions that elevate businesses. 🚀✨
+              I always look forward to crafting design solutions that elevate businesses.
             </p>
           </div>
 
-          {/* Buttons */}
-          <div className="flex gap-3 flex-wrap items-center justify-center pt-8">
-            <PillButton filled href="mailto:paulacarli@gmail.com">CONTACT ME</PillButton>
-
-            <PillButton href="https://www.linkedin.com/in/paulacarli/">LINKEDIN</PillButton>
-            <PillButton href="https://www.behance.net/paulacarli?tracking_source=search_projects%7Cpaulacarli">BEHANCE</PillButton>
-            <a href="#" className="cursor-pointer hover:opacity-70 transition-opacity">
-              <svg viewBox="0 0 100 100" className="w-20 h-20 flex-shrink-0 animate-[spin_12s_linear_infinite_reverse]">
-                <path id="aboutCircle" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
-                <text fontSize="12.5" fill="#666" letterSpacing="0.5">
-                  <textPath href="#aboutCircle">
-                    Check here what&apos;s people adopt •{" "}
-                  </textPath>
-                </text>
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
@@ -324,16 +291,6 @@ export default function Home() {
 
             <PillButton href="https://www.linkedin.com/in/paulacarli/">LINKEDIN</PillButton>
             <PillButton href="https://www.behance.net/paulacarli?tracking_source=search_projects%7Cpaulacarli">BEHANCE</PillButton>
-            <a href="#" className="cursor-pointer hover:opacity-70 transition-opacity">
-              <svg viewBox="0 0 100 100" className="w-20 h-20 flex-shrink-0 animate-[spin_12s_linear_infinite_reverse]">
-                <path id="whatCircle" d="M 50,50 m -36,0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none" />
-                <text fontSize="12.5" fill="#666" letterSpacing="0.5">
-                  <textPath href="#whatCircle">
-                    Check here what&apos;s people adopt •{" "}
-                  </textPath>
-                </text>
-              </svg>
-            </a>
           </div>
         </div>
       </section>
@@ -348,7 +305,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
             <div className="w-full md:w-[250px] md:flex-shrink-0 h-[250px] overflow-hidden bg-stone-300" style={{ borderRadius: 16 }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img-interests.png" alt="Interests" className="w-full h-full object-cover" />
+              <img src="/img-interests.gif" alt="Interests" className="w-full h-full object-cover" />
             </div>
 
             <div className="flex-1 space-y-3 text-sm text-gray-700 leading-relaxed">
@@ -357,10 +314,6 @@ export default function Home() {
                 my creativity and give me fresh perspectives. These personal projects
                 and hobbies are another way I can explore how to translate my
                 inspiration into meaningful results.
-              </p>
-              <p>
-                I love crochet, homemade pasta, sourdough bread, and binge-watching
-                series while I eat sourdough bread and homemade pasta under my crocheting.
               </p>
               <p>
                 I&apos;m also passionate about bespoke bookbinding, and I run workshops
@@ -389,7 +342,7 @@ export default function Home() {
       <section id="contact" className="px-4 md:px-8 py-16 md:py-24 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm text-gray-400 mb-4">Start a project with me.</p>
-          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight mb-8 md:mb-10">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight mb-8 md:mb-10">
             Let&apos;s talk<Dot />
           </h2>
           <a
@@ -416,7 +369,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-left md:text-right text-sm text-gray-500 space-y-0.5">
-            <p>København II, DK</p>
+            <p>København, DK</p>
             <a href="mailto:paulacarli@gmail.com" className="hover:text-black transition-colors block">paulacarli@gmail.com</a>
             <a href="https://wa.me/4591887379" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors block">+4591887379</a>
           </div>
