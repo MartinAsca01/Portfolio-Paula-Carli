@@ -165,12 +165,12 @@ function TabPrototype() {
   return (
     <>
       <FullWidthText
-        title="Interact with the prototype! 👋"
+        title="Watch the demo!"
         text={
           <p>
-            Explore the interactive prototype of the CASA Lite dashboard.
-            Navigate through the Quality Control section and discover how
-            the interface guides lab technicians through their daily workflow.
+            Explore how the CASA Lite dashboard works through a guided video walkthrough.
+            The demo takes you inside the Quality Control section and shows how the
+            interface supports lab technicians throughout their daily workflow.
           </p>
         }
         centered
