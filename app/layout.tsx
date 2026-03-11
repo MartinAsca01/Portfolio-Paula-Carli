@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Paula Carli — UI/UX Designer & Service Designer",
   description: "Portfolio of Paula Carli, multidisciplinary designer crafting rich user-centric experiences.",
+  icons: { icon: "/favicon.png" },
 };
 
 export default function RootLayout({
